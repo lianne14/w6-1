@@ -1,5 +1,6 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import './utils/base';
 
 
 @import './layout/header.scss';
@@ -9,4 +10,5 @@
 @import './pages/index.scss';
 
 @import "../../node_modules/bootstrap";
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&family=Yeseva+One&display=swap");
