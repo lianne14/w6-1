@@ -1,3 +1,17 @@
-.index-title {
-  font-size: 100px;
+.banner{
+  background: url(../images/event/13.jpg) center top;
+  background-size: cover;
+}
+
+.icon{
+  width: 80px;
+}
+
+.online{
+  height:317px;
+  overflow:hidden;
+
+  img{
+    margin-top: -30%;
+  }
 }

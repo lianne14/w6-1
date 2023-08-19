@@ -394,6 +394,8 @@ $spacers: (
   7: $spacer * 1.5, //16*1.5=24px
   8: $spacer * 2,  //16*2=32px
   9: $spacer * 3, //16*3=48px
+  10: $spacer * 3.625, //16*3.625=58px
+  11: $spacer * 14, //16*14=224px
 ) !default; //custom
 // scss-docs-end spacer-variables-maps
 
@@ -505,7 +507,8 @@ $border-widths: (
 ) !default;
 
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+//$border-color:                $gray-300 !default;
+$border-color:                $black !default; //custom
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
@@ -1256,10 +1259,12 @@ $placeholder-opacity-min:           .2 !default;
 
 // scss-docs-start card-variables
 $card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+//$card-spacer-x:                     $spacer !default;
+$card-spacer-x:                     0 !default; //custom
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
-$card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
+//$card-border-color:                 var(--#{$prefix}border-color-translucent)
+$card-border-color:                 none !default; //custom
 $card-border-radius:                $border-radius !default;
 $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
@@ -1269,7 +1274,8 @@ $card-cap-bg:                       rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
-$card-bg:                           $white !default;
+//$card-bg:                           $white !default;
+$card-bg:                           none !default; //custom
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables
