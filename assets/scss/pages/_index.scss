@@ -17,8 +17,13 @@
 }
 
 .teg{
-  border-left: 6px solid #000;
+  border-left: 6px solid $black;
+  background-color: $primary;
   z-index: 1;
+}
+
+.teg:focus{
+  box-shadow: none; //移除點擊時按鈕邊框
 }
 
 .teg:hover::before{
@@ -27,8 +32,9 @@
   left: 0;
   top: 0;
   width: 2px;
-  height: 30px;
-  background-color: #000;
+  height: calc(100% + 4px); //不知道為什麼要 +4px
+  z-index: 2;
+  background-color: $black;
   border-left: 6px solid $yellow;
 }
 
