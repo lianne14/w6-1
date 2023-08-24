@@ -95,6 +95,7 @@ $utilities: map-merge(
     ),
     "border-top": (
       property: border-top,
+      resposive: true,
       values: (
         null: $border-width solid $border-color,
         0: 0,
@@ -102,6 +103,7 @@ $utilities: map-merge(
     ),
     "border-end": (
       property: border-right,
+      resposive: true,
       class: border-end,
       values: (
         null: $border-width solid $border-color,
@@ -110,6 +112,7 @@ $utilities: map-merge(
     ),
     "border-bottom": (
       property: border-bottom,
+      resposive: true,
       values: (
         null: $border-width solid $border-color,
         0: 0,
@@ -117,6 +120,7 @@ $utilities: map-merge(
     ),
     "border-start": (
       property: border-left,
+      resposive: true,
       class: border-start,
       values: (
         null: $border-width solid $border-color,
