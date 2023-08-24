@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto", //能呈現幾個.swiper-slide
+        allowTouchMove: false, // 參考解答加上
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+
+        loop: true,//是否重複
+        speed: 3000,//跑馬燈的速度(毫秒)
+
+        autoplay: {
+            delay: 0, //到下一個幻燈片時，停下的時間
+        
+            disableOnInteraction: false,//避免點擊造成跑馬燈失效，視情況增加
+
+        },
+
+    });
+</script>

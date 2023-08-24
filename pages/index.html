@@ -21,40 +21,40 @@
     </div>
 
     <div class="container">
-      <div class="row row-cols-3 row-cols-sm-2 row-cols-lg-6 g-2" role="group" aria-label="Basic example">
+      <div class="row row-cols-3 row-cols-sm-2 row-cols-lg-6 g-6" role="group" aria-label="Basic example">
         <div class="col">
-          <button type="button" class="btn btn-outline-dark border border-2 me-7 px-10 py-8 h-100 w-100">
+          <button type="button" class="btn btn-outline-dark border border-2 h-100 w-100">
             <img src="../assets/images/cate01.svg" alt="live" class="icon">
             <p class="mt-3 fs-5 fw-bold">演出</p>
           </button>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-outline-dark border border-2 me-7 px-10 py-8 h-100 w-100">
+          <button type="button" class="btn btn-outline-dark border border-2 h-100 w-100">
             <img src="../assets/images/cate02.svg" alt="love" class="icon">
             <p class="mt-3 fs-5 fw-bold">聯誼</p>
           </button>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-outline-dark border border-2 me-7 px-10 py-8 h-100 w-100">
+          <button type="button" class="btn btn-outline-dark border border-2 h-100 w-100">
             <img src="../assets/images/cate03.svg" alt="exhibiton" class="icon">
             <p class="mt-3 fs-5 fw-bold">展覽</p>
           </button>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-outline-dark border border-2 me-7 px-10 py-8 h-100 w-100">
+          <button type="button" class="btn btn-outline-dark border border-2 h-100 w-100">
             <img src="../assets/images/cate04.svg" alt="eat" class="icon">
             <p class="mt-3 fs-5 fw-bold">美食</p>
           </button>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-outline-dark border border-2 me-7 px-10 py-8 h-100 w-100">
+          <button type="button" class="btn btn-outline-dark border border-2 h-100 w-100">
             <img src="../assets/images/cate05.svg" alt="outdoor" class="icon">
             <p class="mt-3 fs-5 fw-bold">戶外</p>
           </button>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-dark border border-2 me-7 px-10 py-8 d-flex h-100 w-100">
-            <p class="fs-3 text-warning text-nowrap ms-auto text-center">探索<br>更多</p>
+          <button type="button" class="btn btn-dark border border-2 me-7 h-100 w-100">
+            <p class="fs-3 text-warning text-nowrap">探索<br>更多</p>
           </button>
         </div>
      </div>
@@ -98,6 +98,8 @@
         </div>
       </div>
     </div>
+
+    <%- include('./layout/swiper'); -%>
 
     <div class="container mt-10">
       <ul class="albums list-unstyled row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-8 g-lg-6">
@@ -159,14 +161,14 @@
         </li>
 
         <li class="col">
-          <div class="border border-2 h-100 position-relative">
+          <div class="subscribe border border-2 h-100 position-relative">
             <p class="fs-4 py-5 px-8 border-bottom border-2 border-dark">#subscribe us</p>
             <p class="p-8">訂閱電子報送折價券！<br>
               定期精選文章資訊及最新優惠資訊，<br>
               還不通通給我訂閱起來？</p>
 
             <div class="flex-nowrap px-8">
-                <input type="text" class="form-control border border-2 border-dark py-5" placeholder="輸入Email">
+                <input type="text" class="form-control border border-2 border-dark py-5 mb-10" placeholder="輸入Email">
             </div>
             <button type="button" class="btn btn-dark full py-2 fw-bold fz-6 text-align-beaseline position-absolute bottom-0">確認訂閱 > ></button>
           </div>
