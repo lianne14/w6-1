@@ -2,3 +2,13 @@
     width: 24px;
     height: 24px;
 }
+
+.eventcard{
+    height: 255px;
+    overflow:hidden;
+    object-fit: cover;
+}
+
+.card a{
+    text-decoration: underline;
+}

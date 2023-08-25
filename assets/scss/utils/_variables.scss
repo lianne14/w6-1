@@ -424,7 +424,7 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+$link-color:                              $dark !default;
 //$link-decoration: underline !default;
 $link-decoration:                         none !default;//custom
 $link-shade-percentage:                   20% !default;
@@ -648,7 +648,8 @@ $text-muted:                  $gray-600 !default;
 
 $initialism-font-size:        $small-font-size !default;
 
-$blockquote-margin-y:         $spacer !default;
+//$blockquote-margin-y:       $space !default;
+$blockquote-margin-y:         0 !default; //custom
 $blockquote-font-size:        $font-size-base * 1.25 !default;
 $blockquote-footer-color:     $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;

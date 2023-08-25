@@ -1,6 +1,7 @@
 .banner{
   background: url(../images/event/13.jpg) center top;
   background-size: cover;
+  margin-top: -30%;
 }
 
 .icon{
@@ -78,10 +79,4 @@
     height: 274px;
   }
 } // object-fit: cover; cover 是填充滿整個框
-
-
-//這邊沒有效果
-.subscribe{
-  border-left: 0px;
-}
 
