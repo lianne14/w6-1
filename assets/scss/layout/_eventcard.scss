@@ -9,6 +9,30 @@
     object-fit: cover;
 }
 
-.card a{
-    text-decoration: underline;
+.left a{
+    &:hover{
+    text-decoration: underline;    
+    }
+
+}
+
+.right a{
+    z-index: 1;
+    position: relative;
+    
+    &:hover{
+    text-decoration: none;      
+    }
+}
+
+.right a:hover:before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: -8px;
+    width: 40px;
+    height: 40px;
+    z-index: -1;
+    border-radius: 100%;
+    background-color: $yellow;
 }

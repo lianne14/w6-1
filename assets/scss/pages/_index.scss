@@ -73,10 +73,16 @@
   }
 }
 
+.albums{
+  @include mobile(){
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .item {
   img {
     object-fit: cover;
     height: 274px;
   }
 } // object-fit: cover; cover 是填充滿整個框
-

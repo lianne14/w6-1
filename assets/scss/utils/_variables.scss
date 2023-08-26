@@ -563,7 +563,7 @@ $aspect-ratios: (
 // stylelint-disable value-keyword-case
 //如果是中間有空格的字型，都建議使用單引號來包住字型名稱唷。
 $font-family-sans-serif:      'Yeseva One', 'Noto Serif TC', 'Noto Sans TC',  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-monospace:       'Noto Sans TC','Noto Serif TC', 'Yeseva One',   system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
 $font-family-code:            var(--#{$prefix}font-monospace) !default;
@@ -604,7 +604,8 @@ $font-sizes: (
   4: $font-size-base * 2, //16*2=32px
   5: $font-size-base * 1.5, //16*1.5=24px
   6: $font-size-base * 1.125, //16*1.125=18px
-  7: $font-size-base //16px
+  7: $font-size-base ,//16px
+  8: $font-size-base * 0.875, //16*0.875=14px
 ) !default;
 // $font-size-base 預設為 1rem，也就是 16px
 // 所以 .fs-1 就是 16 * 4 = 64px
@@ -1272,7 +1273,8 @@ $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba($black, .03) !default;
+//$card-cap-bg:                       rgba($black, .03)
+$card-cap-bg:                       none !default; //custom
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
